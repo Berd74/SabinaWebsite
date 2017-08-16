@@ -14,6 +14,8 @@ function sliderStop() {
 
 function sliderStart() {
 
+    //hi
+
     var slideFade = 750; //750
     var slideTime = 1500 + slideFade; //3000
 
