@@ -1,0 +1,598 @@
+@font-face {
+    font-family: Arapey;
+    src: url(fonts/Amiri-Slanted.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: RalewayThin;
+    src: url(fonts/Raleway-Thin.ttf);
+}
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url(fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: RalewayLight;
+    src: url(fonts/Raleway-Light.ttf);
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: Raleway, serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+
+main h1{
+    font-family: RalewayThin, serif;
+    font-size: 38px;
+}
+h1{
+    margin-top: 0;
+}
+main > div#about, main > div#galery, main > div#contact{
+    padding: 30px;
+}
+
+main > div#private{
+    position: relative;
+ }
+
+
+.onePage{
+    margin: 0;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 80px;
+    width: 100%;
+    position: static;
+    z-index: 100;
+    background-color: white;
+
+}
+nav{
+    height: 100%;
+}
+nav > div > div{
+    margin: auto;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav  a{
+    color: black;
+    text-decoration: none;
+    flex: 0 0 200px;
+}
+
+nav  a > div:first-child{
+    text-align: center;
+    text-transform: uppercase;
+}
+nav  a > div:nth-child(2){
+     text-align: center;
+     font-family: Arapey, serif;
+     font-size: 17px;
+     line-height: 20px;
+ }
+nav  a:nth-child(3){
+    height: 55px;
+    position: relative;
+}
+main {
+    display: block !important;
+    min-height: 5px;
+    flex: 1 1 auto;
+    position: relative;
+
+}
+
+.imageCentering{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#logoSabina{
+    position: absolute;
+    left: -300px;
+    width: 600px;
+    height: 120px;
+    z-index: 100;
+}
+.logoSabinaMenu{
+    width: 240px;
+    margin-left: -20px;
+    z-index: 10;
+    position: absolute;
+    top: 5px;
+}
+
+
+footer{
+    font-family: RalewaySemiBold, serif;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+footer > div{
+    flex: 0 0 30%;
+}
+footer > div:first-child{
+    text-align: left;
+    font-size: 14px;
+}
+footer > div:nth-child(2){
+    text-align: center;
+}
+footer > div:last-child{
+    text-align: right;
+
+}
+
+#initialSlider img{
+    filter: brightness(90%);
+}
+#circleCointainer{
+    z-index: 1000;
+
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    z-index: 1000;
+    margin: 7px;
+}
+@media all and (min-width: 1100px) {
+    .circle:hover .unactive2 {
+        fill: #FFF;
+    }
+}
+
+.imageCentering{
+    overflow: hidden;
+
+}
+.imageCentering > img{
+    position: absolute;
+}
+
+
+.sb0{opacity:0.6;fill:#FFFFFF;}
+.sb1{fill:none;stroke:#FFFFFF;stroke-width:19;stroke-miterlimit:10;}
+
+.unactive1{opacity:0.75;fill:#FFF;}
+.unactive2{fill:#262626;}
+
+@media all and (min-width: 1100px) {
+    .circle:hover .unactive1 {
+        opacity: 1;
+        fill: #FFF;
+    }
+
+    .circle:hover .unactive2 {
+        fill: #FFF;
+    }
+}
+/*.circle:active .unactive1{opacity:0.25;fill:#e5e5e5;}*/
+/*.circle:active .unactive2{fill:#e5e5e5;}*/
+
+/*.circle:active .active1{opacity:0.25;fill:#e5e5e5;}*/
+/*.circle:active .active2{fill:#e5e5e5;}*/
+
+.active1{opacity:1;fill:#FFF;}
+.active2{fill:#FFF;}
+
+.circle .unloaded1{opacity:0.50;fill:#FFF;}
+.circle .unloaded2{display: none}
+.circle .cros{fill:#cbcbcb;}
+.circle .uncross{display: none}
+
+
+/*.berd-mouseParallax{*/
+    /*overflow: hidden;*/
+    /*margin: auto;*/
+
+
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
+
+/*.berd-mouseParallax > img{*/
+    /*position: relative;*/
+/*}*/
+
+/*.berd-scrollParallax{*/
+    /*background-color: lightcyan;*/
+    /*overflow: hidden;*/
+    /*margin: auto;*/
+
+    /*border: 1px solid black;*/
+
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
+
+/* ################################################### ABOUT PAGE ################################################### */
+#about{
+    width: 912px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#about p{
+    line-height: 25px;
+}
+#about h1{
+    margin-top: 0px;
+}
+#about #textSection, #about #imgSection {
+    flex: 0 0 400px;
+    max-width: 600px;
+}
+#about #photoSection{
+    margin: 0px 0px 60px 112px;
+}
+#about .sabina{
+    /*width: 300px;*/
+    width: 100%;
+    max-width: 600px;
+}
+
+@media all and (max-width: 1100px) {
+
+    #about #photoSection{
+        margin: auto;
+    }
+    #about{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about #textSection, #about #imgSection {
+        text-align: justify;
+    }
+    .onePage{
+        overflow: auto;
+    }
+}
+
+
+/* ################################################### MENU BUTTON ################################################### */
+
+#buttonMenu{
+    flex: 0 0 32px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    width: 32px;
+    margin: 0 0 6px;
+
+}
+#buttonMenu > svg{
+    width: 40px;
+}
+@media all and (min-width: 1101px) {
+
+    #buttonMenu{
+        display: none;
+    }
+    .menuCover:nth-child(1){
+        display: none;
+    }
+    .menuCover:nth-child(2){
+        bottom: 0 !important;
+    }
+
+}
+
+/* ################################################### MENU LIST RESPONSIVE ################################################### */
+
+.menuCover{
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 4px 1px rgba(32, 32, 32, 0.41);
+    position: relative;
+
+}
+
+
+
+@media all and (max-width: 1100px) {
+    .imageCentering{
+        margin-top: -52px;
+    }
+    header{
+        height: 94px;
+        position: fixed;
+        /*top: 52px;*/
+        margin-top: -52px
+    }
+    main{
+        margin-top: 94px;
+    }
+    .logoSabinaMenu {
+        width: 180px;
+    }
+    nav > div:nth-child(2) > div{
+        flex-direction: column;
+        height: auto;
+        width: 220px;
+        background-color: white;
+        box-shadow: 0 0 4px 1px rgba(32, 32, 32, 0.21);
+    }
+    nav a{
+        flex: auto;
+        padding: 15px 20px;
+    }
+    nav a:nth-child(3){
+        display: none;
+    }
+    .menuCover:nth-child(2){
+        background-color: transparent;
+        box-shadow: none;
+        z-index: -1;
+        bottom: 300px;
+    }
+    .menuCover:nth-child(1){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 20px 0;
+        flex-direction: column;
+    }
+    nav > div:first-child > a:nth-child(1){
+        flex: 0 0 40px;
+        padding: 0;
+        margin: 6px 0 6px;
+    }
+    nav a:nth-child(1) > .logoSabinaMenu{
+        margin-left: 0;
+        position: relative;
+        top: 3px;
+    }
+    nav > div > div {
+        margin: auto;
+    }
+}
+
+/* ################################################### GALLERY PAGE ################################################### */
+
+#galery{
+    margin: auto;
+    width: 912px;
+}
+#galery .flexBox{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+#galery .galleryFlex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#galery .galleryCover{
+    cursor: pointer;
+    display: block;
+    margin: 4px;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+#galery .imageCover{
+    height: 220px;
+}
+#galery .galleryCover img{
+    height: 220px;
+    position: relative;
+}
+#galery .description{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(38, 38, 38, 0.4);
+    transition: opacity 100ms linear ;
+}
+#galery .description:hover{
+    opacity: 1;
+}
+#galery .description span{
+    color: white;
+    position: relative;
+    bottom: 10px;
+    transition: bottom 100ms linear ;
+}
+#galery .description:hover span{
+    bottom: 0;
+}
+#galery .description .info{
+    font-family: Arapey, serif;
+    font-size: 17px;
+    line-height: 20px;
+}
+#galery .description .title{
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+#galery .flexHelper{
+    width: 228px;
+}
+
+@media all and (max-width: 1100px) {
+    #galery .description{
+        opacity: 1;
+    }
+    #galery .description span{
+        bottom: 0;
+    }
+    #galery{
+        max-width: 912px;
+        width: auto;
+    }
+    #galery h1{
+        text-align: center;
+    }
+    #galery .galleryFlex{
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* ################################################### PASSWORD ################################################### */
+
+#passwordBackground{
+    display: none;
+    position: absolute;
+    background-color: rgba(240, 240, 240, 0.62);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+
+}
+#passwordCover{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.91);
+    max-width: 550px;
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0 0 5px 0 rgba(32, 32, 32, 0.41);
+    padding: 30px;
+}
+#passwordCover p span{
+    color: red;
+}
+
+#passwordCover #titlePrivateGalery{
+    font-family: RalewayLight, serif;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 14px;
+}
+#passwordCover #pass{
+    width: 100%;
+    box-sizing: border-box;
+}
+#passwordCover #incorrectPassword{
+}
+#passwordCover #buttons{
+    text-align: right;
+    margin: 16px 0 0;
+
+}
+#passwordCover #backButton{
+
+}
+#passwordCover input{
+    border: 1px solid #eaeaea;
+    background-color: #f6f6f6;
+    padding: 8px;
+    box-sizing: border-box;
+
+
+}
+#passwordCover input:focus{
+    outline: #9bbdf4 solid 2px;
+    outline-offset: -1px;
+    background-color: #ececec;
+
+
+
+}
+#passwordCover button{
+    border: 1px solid #eaeaea;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #f6f6f6;
+    padding: 8px;
+    text-transform: uppercase;
+}
+#passwordCover button:focus{
+    outline: none;
+    outline-offset: 0;
+}
+#passwordCover button:hover{
+    background-color: #f1f1f1;
+
+}
+#passwordCover button:active{
+    background-color: #ececec;
+}
+
+#contact{
+    width: 912px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#contact #textSection, #contact #imgSection {
+    flex: 0 0 400px;
+    max-width: 600px;
+}
+#contact > div > div{
+    padding: 10px 0;
+}
+#contact img{
+    margin-bottom: -3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sabinafoto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/fotorama.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#FFFFFF">
+    <script src="js/jquery.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/exploer.js"></script>
+
+    <script src="js/dynamicPages.js"></script>
+    <script src="js/password.js"></script>
+
+    <script src="js/initialSlider2.js"></script>
+
+    <script src="js/menuResponsive.js"></script>
+    <script src="js/mainLogo.js"></script>
+
+
+</head>
+<body>
+<div class="onePage">
+    <header>
+        <nav>
+            <div class="menuCover">
+
+                <a class="menuHideOnClick" href="initialSlider.php">
+
+                    <div class="logoSabinaMenu"><img src="logo4grey.svg"></div>
+                </a>
+
+                <div id="buttonMenu">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px" viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    clip-path: url("#S_mask_2_");
+                                    fill: none;
+                                    stroke: #666666;
+                                    stroke-width: 11;
+                                    stroke-miterlimit: 10;
+                                }
+
+                                .menuIcon {
+                                    fill: #000;
+                                }
+                            </style>
+
+                            <path class="menuIcon"
+                                  d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z"></path>
+                            <path class="menuIcon"
+                                  d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z"></path>
+                            <path class="menuIcon"
+                                  d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z"></path>
+                        </svg>
+                </div>
+            </div>
+            <div class="menuCover">
+                <div id="menuList">
+                    <a class="menuHideOnClick" href="galery.php">
+                        <div>Galeria</div>
+                        <div>nasze prace</div>
+                    </a>
+                    <a class="menuHideOnClick" href="about.php">
+                        <div>O nas</div>
+                        <div>poznaj nas</div>
+                    </a>
+                    <a href="initialSlider.php">
+
+                        <div class="logoSabinaMenu"><img src="logo4grey.svg"></div>
+                    </a>
+                    <a class="menuHideOnClick" href="contact.php">
+                        <div>Kontakt</div>
+                        <div>napisz do nas</div>
+                    </a>
+                    <a class="menuHideOnClick" href="private.php">
+                        <div>Prywatne</div>
+                        <div>dla wtajemniczonych</div>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+</div>
+<div id="passwordBackground">
+    <div id="passwordCover">
+        <div id='titlePrivateGalery'></div>
+        <p>Ta galeria jest chroniona hasłem.</p>
+        <p id="incorrectPassword"><span></span></p>
+        <input id="pass" type="password" name="password" placeholder="Hasło"><br/>
+        <div id="buttons">
+            <button id="backButton">powrót</button>
+            <button id="goButton">dalej</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
